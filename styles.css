@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+#header-img {
+  width: 120px;
+  object-fit: contain;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.the-group {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 700;
+  font-family: "montserrat";
+}
+
+#contact-section {
+  margin-top: 125px;
+}
+
+#button {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-family: "montserrat";
+}
+
+section::before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+section {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "fraunces";
+  margin-bottom: 10px;
+}
