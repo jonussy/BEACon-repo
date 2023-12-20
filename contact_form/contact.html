@@ -50,11 +50,22 @@
       </div>
       <div class="form">
         <h1>Contact Us</h1>
-        <form action="#">
-          <input type="text" id="name" placeholder="Name" />
-          <input type="email" id="email" placeholder="Email" />
-          <input type="text" id="subject" placeholder="Subject" />
-          <textarea id="message" placeholder="Message"></textarea>
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+          <input type="text" name="name" required placeholder="Name" />
+          <input type="email" name="email" required placeholder="Email" />
+          <input type="text" name="subject" required placeholder="Subject" />
+          <textarea name="message" required placeholder="Message"></textarea>
+          <input
+            type="hidden"
+            name="_cc"
+            value="another@rmail.com,yetanother@email.com"
+          />
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://yourdomain.co/thanks.html"
+          />
           <button type="submit">Submit</button>
         </form>
       </div>
