@@ -4,29 +4,32 @@
 }
 
 #header-img {
-  width: 120px;
+  width: 10vw;
   object-fit: contain;
+  padding-left: 0.5vw;
 }
 
 #nav-bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100%;
+  width: 98vw;
   top: 0;
-  padding: 10px;
+  padding: 0.4vw;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
+  font-size: 1.35rem;
+  font-family: "montserrat", sans-serif;
 }
 
 .nav-links a {
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 0.5vw;
 }
 
 .logo-container {
@@ -36,9 +39,10 @@
 
 .the-group {
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 0.35vw;
   font-weight: 700;
   font-family: "montserrat";
+  margin-top: 3vh;
 }
 
 #contact-section {

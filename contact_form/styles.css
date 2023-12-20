@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(145deg, var(--secondary), var(--primary));
+  background-image: linear-gradient(145deg, var(--primary), var(--secondary));
 }
 
 .contact {
@@ -32,6 +32,11 @@ body {
 .map,
 .form {
   width: 50%;
+  height: 100%;
+}
+
+.map iframe {
+  width: 100%;
   height: 100%;
 }
 
@@ -92,4 +97,57 @@ button {
   color: white;
   border-radius: 2rem;
   border: none;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  padding: 0.4vw;
+}
+
+#header-img {
+  width: 10.1vw;
+  object-fit: contain;
+  padding-left: 0.1vw;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 98.4vw;
+  top: 0;
+  padding: 0.4vw;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  font-size: 1.35rem;
+  color: #ffffff;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 0 0.5vw;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.the-group {
+  font-size: 20px;
+  margin-left: 0.35vw;
+  font-weight: 700;
+  font-family: "montserrat";
+  margin-top: 3vh;
 }
